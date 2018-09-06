@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+ <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
+ </head>
+
+ <body>
 	<header class="page-header">
-			<h1 class="page-title">Седона-сайт поиска жилья</h1>
+			<h1 class="visually-hidden">Седона-сайт поиска жилья</h1>
 		<nav class="navigation">
 			<a class="navigation-logo" href="index.html">CITY OF SEDONA</a>
 			<ul class="navigation-site">
@@ -25,13 +26,12 @@
 			<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 		</section>
 		<section class="benefit">
-			<div>
-				<div class="benefit-background">
-					<h2>Настоящий городок</h2>
-					<p>-№1-</p>
-					<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
-				</div>
-				<img class="benefit-photos" src="img/Layer 13.png" alt="place1" width="512" height="256">
+			
+			<div class="benefit-background">
+				<h2>Настоящий городок</h2>
+				<p>-№1-</p>
+				<p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+				<img class="benefit-photos" src="img/Layer13.png" alt="place1" width="512" height="256">
 			</div>
 			<div class="benefit-one">
 				<div>
@@ -51,7 +51,7 @@
 			</div>
 			<div class="benefit-background">
 				<div>
-					<img class="benefit-photos" src="img/Layer 14.png" alt="place2" width="512" height="256">
+					<img class="benefit-photos" src="img/Layer14.png" alt="place2" width="512" height="256">
 				</div>
 				<div>
 					<h2>Там есть мост дьявола</h2>
@@ -86,23 +86,19 @@
 			<p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
 		</div>
 
-		<div class="modal modal-search">
-			<p><button class="search-window"><b>Поиск гостиницы в Седоне</b>
-					</button></p>	
-			<form class="search-calendar" action="#" method="post">
-				<fieldset>
-				<label for="date-enter">Дата заезда
-					<input type="text" name="enter" id="date-enter"></label>
-     			<label for="date-exit">Дата выезда
-      				<input type="text" name="exit" id="date-exit"></label>
-      			<label for="number-adult">Взрослые
-      				<input type="text" name="adult" id="number-adult"></label>
-      			<label for="number-child">Дети
-      				<input type="text" name="child" id="number-child"></label>
+		<details class="modal modal-search">
+			<summary>
+				<button class="search-window"><b>Поиск гостиницы в Седоне</b></button>
+			</summary>	
+
+			<form class="search-calendar" action="/echo" method="post">
+				<p><label>Дата заезда<input type="date" name="enter" aria-label="Введите дату заезда"></label></p>
+     			<p><label>Дата выезда<input type="date" name="exit" aria-label="Введите дату выезда"></label></p>
+      			<label>Взрослые<input type="number" name="adult" aria-label="Введите количество взрослых"></label>
+      			<label>Дети<input type="number" name="child" aria-label="Введите количество детей"></label>
       			<input type="submit" value="Найти">
-      		</fieldset>
-			</form>
-		</div>
+      		</form>
+		</details>
       	
       	<section class="map">
       		<img src="http://placehold.it/250x250" alt="map" width="300" height="300">
@@ -117,14 +113,14 @@
     		</div>
     		<div class="social">
     			<ul>
-    				<li><a class="social-button" href="#">Twitter</a></li>
-    				<li><a class="social-button" href="#">Facebook</a></li>
-    				<li><a class="social-button" href="#">YouTube</a></li>
+    				<li><a class="social-button" href="#" aria-label="Читайте нас в">Twitter</a></li>
+    				<li><a class="social-button" href="#" aria-label="Читайте нас на">Facebook</a></li>
+    				<li><a class="social-button" href="#" aria-label="Смотрите на на">YouTube</a></li>
     			</ul>  
     		</div>
     		<div class="footer-copyright">
     			<span>Website by</span>
-    			<a href="https://htmlacademy.ru">html academy</a>
+    			<a href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
     		</div>
     	</section>
     	
