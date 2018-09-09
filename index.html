@@ -3,28 +3,35 @@
  <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
  </head>
 
  <body>
 	<header class="page-header">
 			<h1 class="visually-hidden">Седона-сайт поиска жилья</h1>
 		<nav class="navigation">
-			<a class="navigation-logo" href="index.html">CITY OF SEDONA</a>
+			<a class="navigation-logo center" href="index.html">CITY OF SEDONA</a>
 			<ul class="navigation-site">
-				<li><a href="#">Информация</a></li>
-				<li><a href="#">Фото и видео</a></li>
-				<li><a href="#">Карта штата</a></li>
-				<li class="navigation-site-link"><a href="inner.html">Гостиницы</a></li>
+				<li><a class="disabled left" href="#">Информация</a></li>
+				<li><a class="left" href="#">Фото и видео</a></li>
+				<li><a class="right" href="#">Карта штата</a></li>
+				<li><a class="right" href="inner.html">Гостиницы</a></li>
 			</ul>
 		</nav>
 	</header>
 		
 	<main class="container">
-		<section class="preview">
-			<p><b>Седона - небольшой городок а Аризоне, заслуживающий большего!</b></p>
-			<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-		</section>
+		<div class="background-foto">
+			<div class="image-logo"></div>
+			<div class="scenery"></div>
+			<div class="preview">	
+				<p><b>Седона - небольшой городок в Аризоне,<br>
+				 заслуживающий большего!</b></p>
+				<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+			</div>
+		</div>
 		<section class="benefit">
 			
 			<div class="benefit-background">
@@ -35,19 +42,17 @@
 			</div>
 			<div class="benefit-one">
 				<div>
-					<div>
-						<h2>Жилье</h2>
-						<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-					</div>
-					<div>
-						<h2>Еда</h2>
-						<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-					</div>
-					<div>
-						<h2>Сувениры</h2>
-						<p>Не только китайского, но и местного производства!</p>
-					</div>
+					<h2>Жилье</h2>
+					<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 				</div>
+				<div>
+					<h2>Еда</h2>
+					<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+				</div>
+				<div>
+					<h2>Сувениры</h2>
+					<p>Не только китайского, но и местного производства!</p>
+				</div>	
 			</div>
 			<div class="benefit-background">
 				<div>
@@ -61,23 +66,20 @@
 			</div>
 			<div class="benefit-two">
 				<div>
-					<div>
-						<h2>Небольшая площадь</h2>
-						<p>-№3-</p>
-						<p>Все достопримечательности находятся очень близко</p>
-					</div>
-					<div>
-						<h2>Красивая дорога</h2>
-						<p>-№4-</p>
-						<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-					</div>
-					<div>
-						<h2>Мало туристов</h2>
-						<p>-№5-</p>
-						<p>Большинство едет в Гранд Каньон и толпится там</p>
-					</div>	
+					<h2>Небольшая площадь</h2>
+					<p>-№3-</p>
+					<p>Все достопримечательности находятся очень близко</p>
 				</div>
-				
+				<div>
+					<h2>Красивая дорога</h2>
+					<p>-№4-</p>
+					<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+				</div>
+				<div>
+					<h2>Мало туристов</h2>
+					<p>-№5-</p>
+					<p>Большинство едет в Гранд Каньон и толпится там</p>
+				</div>	
 			</div>
 		</section>
 		
@@ -96,31 +98,31 @@
      			<p><label>Дата выезда<input type="date" name="exit" aria-label="Введите дату выезда"></label></p>
       			<label>Взрослые<input type="number" name="adult" aria-label="Введите количество взрослых"></label>
       			<label>Дети<input type="number" name="child" aria-label="Введите количество детей"></label>
-      			<input type="submit" value="Найти">
+      			<input class="search-button" type="submit" value="Найти">
       		</form>
 		</details>
       	
       	<section class="map">
-      		<img src="http://placehold.it/250x250" alt="map" width="300" height="300">
+      		<img src="img/map.png" alt="Sedona" aria-label="Седона, Аризона, США">
       	</section>
 
 	</main>
 
-    <footer class="footer-style">
+    <footer>
     	<section class="elastic">
     		<div class="hashteg">
     			<b>#VISITSEDONA</b>
     		</div>
     		<div class="social">
     			<ul>
-    				<li><a class="social-button" href="#" aria-label="Читайте нас в">Twitter</a></li>
-    				<li><a class="social-button" href="#" aria-label="Читайте нас на">Facebook</a></li>
-    				<li><a class="social-button" href="#" aria-label="Смотрите на на">YouTube</a></li>
+    				<li><a class="social-fon twitter-logo" href="#" aria-label="Читайте нас в">Twitter</a></li>
+    				<li><a class="social-fon facebook-logo" href="#" aria-label="Читайте нас на">Facebook</a></li>
+    				<li><a class="social-fon youtube-logo" href="#" aria-label="Смотрите нас на">YouTube</a></li>
     			</ul>  
     		</div>
     		<div class="footer-copyright">
     			<span>Website by</span>
-    			<a href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
+    			<a class="academy" href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
     		</div>
     	</section>
     	
